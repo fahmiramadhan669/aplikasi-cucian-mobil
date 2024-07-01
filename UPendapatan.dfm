@@ -1,0 +1,161 @@
+object FPendapatan: TFPendapatan
+  Left = 463
+  Top = 218
+  Width = 455
+  Height = 321
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Pendapatan'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 8
+    Top = 8
+    Width = 425
+    Height = 265
+    Color = clMedGray
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 24
+      Top = 40
+      Width = 66
+      Height = 22
+      Caption = 'Tanggal'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 24
+      Top = 96
+      Width = 113
+      Height = 22
+      Caption = 'Jumlah Mobil'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 24
+      Top = 144
+      Width = 42
+      Height = 22
+      Caption = 'Total'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object BitKeluarTHR: TBitBtn
+      Left = 311
+      Top = 224
+      Width = 98
+      Height = 28
+      Caption = 'Keluar'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+    end
+    object BitTambahPendapatan: TBitBtn
+      Left = 103
+      Top = 225
+      Width = 98
+      Height = 28
+      Caption = 'Tambah'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+    end
+    object EdJumlahMobil: TEdit
+      Left = 176
+      Top = 91
+      Width = 225
+      Height = 27
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+      Text = 'EdJumlahMobil'
+    end
+    object DTPendapatan: TDateTimePicker
+      Left = 176
+      Top = 40
+      Width = 225
+      Height = 27
+      Date = 44474.628768182870000000
+      Format = 'dd MMMM yyyy'
+      Time = 44474.628768182870000000
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+    end
+    object BitBatal: TBitBtn
+      Left = 207
+      Top = 225
+      Width = 98
+      Height = 28
+      Caption = 'Batal'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+    end
+    object EdTotal: TEdit
+      Left = 176
+      Top = 144
+      Width = 225
+      Height = 27
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+      Text = 'EdTotal'
+    end
+  end
+  object ADOQuery1: TADOQuery
+    Parameters = <>
+    Left = 16
+    Top = 240
+  end
+  object ADOTable1: TADOTable
+    Left = 56
+    Top = 240
+  end
+end
